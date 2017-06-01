@@ -1,5 +1,5 @@
 test:
   post:
+    - now -t ${NOW_TOKEN} rm -y playground-now
     - NOW_URL=$(now --public -t ${NOW_TOKEN})
-    - echo ${NOW_URL}
     - now -t ${NOW_TOKEN} alias set ${NOW_URL} alexjpaz-playground-now.now.sh
