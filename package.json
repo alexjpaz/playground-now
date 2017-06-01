@@ -1,0 +1,10 @@
+{
+  "scripts": {
+      "start": "node index.js",
+      "now-deploy": "now -t ${NOW_TOKEN}"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "now": "^6.2.4"
+  }
+}
