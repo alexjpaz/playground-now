@@ -1,10 +1,17 @@
 const express = require('express')
 const app = express()
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
-});
+app.use(express.static('public'));
 
-app.listen(3000, function () {
+
+const server = app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 });
+
+var Gun = require('gun');
+
+var gun = Gun({
+    web: server,
+    file: 'data.json'
+});
+

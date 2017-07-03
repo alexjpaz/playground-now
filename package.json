@@ -1,10 +1,11 @@
 {
   "scripts": {
-      "start": "node index.js",
-      "now-deploy": "now -n alexjpaz-playground-now --public -t ${NOW_TOKEN}"
+    "start": "node index.js",
+    "now-deploy": "now -n alexjpaz-playground-now --public -t ${NOW_TOKEN}"
   },
   "dependencies": {
     "express": "^4.15.3",
+    "gun": "^0.7.9",
     "now": "^6.2.4"
   }
 }
